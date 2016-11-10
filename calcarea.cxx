@@ -24,7 +24,7 @@ int main (int argc, char *argv[]) {
 
   // Create and instance of Circle
   Circle circ ( mid , mid );
-  cout << " Setup circle with radius : " << mid << " and center : " << mid << endl; 
+  cout << "Setup circle with radius : " << mid << " and center : " << mid << endl; 
 
   std::random_device rd;
   std::mt19937 g(rd());
@@ -44,7 +44,7 @@ int main (int argc, char *argv[]) {
     }
   }
   circ.UpdateArea();
-  cout << "Total in : " << circ.get_in_num() << "  Total out : " << circ.get_out_num() << "  Fractional Area is :" << circ.get_area()  << " Total points: " << circ.get_in_num() + circ.get_out_num() << endl;
+  cout << "Total points in circle: " << circ.get_in_num() << "  Total points outside circle: " << circ.get_out_num() << "   Fractional Area is: " << circ.get_area()  << "  Total points tested: " << circ.get_in_num() + circ.get_out_num() << endl;
 
 
   

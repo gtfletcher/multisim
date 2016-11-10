@@ -1,7 +1,7 @@
-OBJ = circle.o calcarea.o
+OBJ = 
 src = $(OBJ:.o=.cxx)
 
-EXE = circle
+EXE = 
 
 FLAGS = -Wall -O3 --std=c++11
 cc = g++
